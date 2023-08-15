@@ -19,6 +19,7 @@ export class CategoriesService {
   }
 
   findOne(id: number) {
+    throw new Error();
     return this.prismaService.category.findUniqueOrThrow({
       where: {
         id: id
